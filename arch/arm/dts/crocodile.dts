@@ -18,3 +18,11 @@
 	/delete-property/ phy-reset-gpios;
 	/delete-property/ phy-reset-duration;
 };
+
+&uart3 {
+	/*
+	 * delete DMA properties from UART
+	 */
+	/delete-property/ dmas;
+	/delete-property/ dma-names;
+};

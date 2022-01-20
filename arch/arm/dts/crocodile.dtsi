@@ -366,7 +366,7 @@
 	status = "okay";
 };
 
-/* console */
+/* debug console */
 &uart3 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_uart3>;
@@ -703,8 +703,8 @@
 
 	pinctrl_uart3: uart3grp {
 		fsl,pins = <
-			CROCODILE_IMX8_UART3_RXD	0x000
-			CROCODILE_IMX8_UART3_TXD	0x140
+			CROCODILE_IMX8_UART3_RXD	0x1916
+			CROCODILE_IMX8_UART3_TXD	0x116
 		>;
 	};
 
