@@ -1,6 +1,7 @@
-i.MX8MM CROCODILE BOARD
-M:	Leica <info@leica-geosystems.com>
+CROCODILE (GS05) BOARD
+M:	Leica BSP Team <bsp-development.geo@leica-geosystems.com>
 S:	Maintained
+F:	arch/arm/dts/crocodile*
 F:	board/leica/crocodile/
 F:	include/configs/crocodile.h
 F:	configs/crocodile_defconfig

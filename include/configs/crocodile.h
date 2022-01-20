@@ -1,6 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /*
  * Copyright 2019 NXP
+ * Copyright 2022 Leica Geosystems AG
  */
 
 #ifndef __CROCODILE_H
@@ -50,7 +51,7 @@
 	"console=ttymxc2,115200\0" \
 	"fdt_addr_r=0x43000000\0"			\
 	"boot_fit=no\0" \
-	"fdtfile=imx8mm-evk.dtb\0" \
+	"fdtfile=crocodile.dtb\0" \
 	"initrd_addr=0x43800000\0"		\
 	"bootm_size=0x10000000\0" \
 	"mmcpart=" __stringify(CONFIG_SYS_MMC_IMG_LOAD_PART) "\0" \

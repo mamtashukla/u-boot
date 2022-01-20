@@ -28,13 +28,6 @@ choice
 	prompt "NXP i.MX8M board select"
 	optional
 
-config TARGET_CROCODILE
-	bool "Leica crocodile board"
-	select BINMAN
-	select IMX8MM
-	select SUPPORT_SPL
-	select IMX8M_LPDDR4
-
 config TARGET_IMX8MQ_CM
 	bool "Ronetix iMX8MQ-CM SoM"
 		select BINMAN
@@ -163,6 +156,13 @@ config TARGET_IMX8MM_CL_IOT_GATE
 
 config TARGET_IMX8MM_CL_IOT_GATE_OPTEE
 	bool "CompuLab iot-gate-imx8 with optee support"
+	select BINMAN
+	select IMX8MM
+	select SUPPORT_SPL
+	select IMX8M_LPDDR4
+
+config TARGET_IMX8MM_LEICA_CROCODILE
+	bool "Leica Crocodile (GS05) board"
 	select BINMAN
 	select IMX8MM
 	select SUPPORT_SPL

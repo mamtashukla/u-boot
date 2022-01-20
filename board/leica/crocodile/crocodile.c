@@ -61,8 +61,8 @@ int board_mmc_get_env_dev(int devno)
 int board_late_init(void)
 {
 #ifdef CONFIG_ENV_VARS_UBOOT_RUNTIME_CONFIG
-	env_set("board_name", "EVK");
-	env_set("board_rev", "iMX8MM");
+	env_set("board_name", "GS05");
+	env_set("board_rev", "PT1");
 #endif
 	return 0;
 }

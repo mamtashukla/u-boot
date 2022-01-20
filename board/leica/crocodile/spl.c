@@ -133,7 +133,7 @@ void board_init_f(ulong dummy)
 
 	arch_cpu_init();
 
-	init_uart_clk(1);
+	init_uart_clk(2);
 
 	board_early_init_f();
 
