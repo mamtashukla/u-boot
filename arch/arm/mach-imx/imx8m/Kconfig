@@ -28,6 +28,13 @@ choice
 	prompt "NXP i.MX8M board select"
 	optional
 
+config TARGET_CROCODILE
+	bool "Leica crocodile board"
+	select BINMAN
+	select IMX8MM
+	select SUPPORT_SPL
+	select IMX8M_LPDDR4
+
 config TARGET_IMX8MQ_CM
 	bool "Ronetix iMX8MQ-CM SoM"
 		select BINMAN
@@ -173,6 +180,7 @@ source "board/freescale/imx8mp_evk/Kconfig"
 source "board/gateworks/venice/Kconfig"
 source "board/google/imx8mq_phanbell/Kconfig"
 source "board/kontron/sl-mx8mm/Kconfig"
+source "board/leica/crocodile/Kconfig"
 source "board/phytec/phycore_imx8mm/Kconfig"
 source "board/phytec/phycore_imx8mp/Kconfig"
 source "board/ronetix/imx8mq-cm/Kconfig"

@@ -1,0 +1,6 @@
+i.MX8MM CROCODILE BOARD
+M:	Leica <info@leica-geosystems.com>
+S:	Maintained
+F:	board/leica/crocodile/
+F:	include/configs/crocodile.h
+F:	configs/crocodile_defconfig
