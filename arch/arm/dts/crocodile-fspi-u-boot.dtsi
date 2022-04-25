@@ -11,11 +11,11 @@
 	imx-boot-fspi {
 		filename = "flash.bin";
 		pad-byte = <0x00>;
-		
+
 		fspi_conf_block {
-			filename = "board/leica/crocodile/fspi_conf.bin";
-			offset = <0x00>;
+			filename = CONFIG_FSPI_CONF_FILE;
 			type = "blob-ext";
+			size = <0x1000>;
 		};
 
 		spl {
